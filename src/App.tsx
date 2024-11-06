@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Password from './components/Password';
+import Tree from './components/Tree';
+import DATA from '../src/data'
+import Input from './components/Input';
+
+const data = [{
+  name: "Anurag", value: "AN", Counrtry: ["Sidhu ", "Shab"]
+},
+{
+  name: "India", value: "IN", Country: ["Alibhag", "Chennai"]
+},
+{
+  name: "China", value: "CN", Country: ["Korea", "Hongkong"]
+}
+]
 
 function App() {
+
+  console.log(data);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Password /> */}
+      <Input />
+      {/* <Tree DATA={DATA} /> */}
     </div>
   );
 }

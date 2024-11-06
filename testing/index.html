@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="buttonToggle">Click To Toggle</button>
+    <p id="ToggleId">Off</p>
+</body>
+
+<script>
+    const getToggle = document.getElementById("ToggleId")
+
+    const button = document.getElementById("buttonToggle")
+
+    const toggleButton = button.addEventListener("click", () => {
+        if (getToggle.innerHTML === "ON") {
+            getToggle.innerHTML = "OFF"
+        }
+        else {
+            getToggle.innerHTML = "ON"
+        }
+    })
+</script>
+
+</html>
